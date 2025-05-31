@@ -1,0 +1,245 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* بخش ورودی اگه اشتباه نکنم */
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 2em;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 1s ease-in;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: #222;
+      padding: 10px 15px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      background: #00c6ff;
+      color: black;
+    }
+    section.hero {
+      padding: 100px 20px;
+      text-align: center;
+      animation: slideIn 1.5s ease-out;
+    }
+    section.hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00c6ff;
+    }
+    section.hero p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* بخش مهارت */
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .skills-section {
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+  
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 40px;
+        color: #fff;
+      }
+  
+      .skill {
+        margin-bottom: 30px;
+      }
+  
+      .skill-name {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+  
+      .progress-bar {
+        background-color: #333;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 25px;
+      }
+  
+      .progress {
+        height: 100%;
+        line-height: 25px;
+        text-align: right;
+        padding-right: 10px;
+        color: white;
+        border-radius: 20px;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        width: 0;
+        animation: fillProgress 2s ease-out forwards;
+      }
+  
+      .progress.photoshop { width: 90%; }
+      .progress.corel { width: 85%; }
+      .progress.illustrator { width: 80%; }
+      .progress.icdl { width: 95%; }
+      .progress.quickbooks { width: 75%; }
+      .progress.programming { width: 70%; }
+  
+      @keyframes fillProgress {
+        from { width: 0; }
+        to { /* width per class */ }
+      }
+      /* بخش ارتباط */
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #111;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-container {
+        text-align: center;
+        background: #000;
+        padding: 20px;
+      }
+      .menu-btn { display: none; }
+      .menu-label {
+        font-size: 1.3em;
+        cursor: pointer;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .menu-label:hover {
+        background: linear-gradient(to left, #00c6ff, #0072ff);
+      }
+      .menu-content {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .menu-content a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        background: #222;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      .menu-content a:hover {
+        background: #00c6ff;
+        color: black;
+      }
+      .menu-btn:checked + .menu-label + .menu-content {
+        display: flex;
+      }
+      .projects {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .project {
+        background: #1e1e1e;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #111;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-container {
+        text-align: center;
+        background: #000;
+        padding: 20px;
+      }
+      .menu-btn { display: none; }
+      .menu-label {
+        font-size: 1.3em;
+        cursor: pointer;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .menu-label:hover {
+        background: linear-gradient(to left, #00c6ff, #0072ff);
+      }
+      .menu-content {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .menu-content a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        background: #222;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      .menu-content a:hover {
+        background: #00c6ff;
+        color: black;
+      }
+      .menu-btn:checked + .menu-label + .menu-content {
+        display: flex;
+      }
+      .contact {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .contact div {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+      }
+  
